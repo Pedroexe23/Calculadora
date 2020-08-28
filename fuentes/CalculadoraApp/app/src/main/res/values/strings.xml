@@ -3,4 +3,5 @@
     <string name="texto1">hola mundo</string>
     <string name="Texto2">Hola Pedro</string>
     <string name="Btn_saludar">Saludar</string>
+    <string name="Saludo">saludar</string>
 </resources>
