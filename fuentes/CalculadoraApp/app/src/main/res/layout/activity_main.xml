@@ -7,41 +7,141 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/temaniimagen"
+        android:layout_marginTop="@dimen/marginbase"
+        android:src="@drawable/calculator">
+
+    </ImageView>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="318dp"
-        android:background="@color/primary_dark"
-        android:gravity="center"
-        android:text="@string/texto1"
-        android:textColor="@color/primary_light"
-        android:textSize="40sp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginbase"
+        android:orientation="horizontal">
 
-    </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="@string/n1"
+            android:textSize="@dimen/Tamañoletra">
 
-    <TextView
+        </TextView>
+
+        <EditText
+            android:id="@+id/N1Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textSize="@dimen/Tamañoletra">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="279dp"
-        android:layout_weight="1"
-        android:background="@color/primary_light"
-        android:gravity="center"
-        android:text="@string/Texto2"
-        android:textColor="@color/primary_dark"
-        android:textSize="40sp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginbase"
+        android:orientation="horizontal">
 
-    </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="@string/n2"
+            android:textSize="@dimen/Tamañoletra">
 
-    <Button
+        </TextView>
+
+        <EditText
+            android:id="@+id/N2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textSize="@dimen/Tamañoletra">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:layout_weight="2"
-        android:background="@color/primary"
-        android:text="@string/Saludo"
-        android:textColor="@color/primary_light"
-        android:textSize="40sp"
-        android:onClick="Saludars"
-        >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginbase2"
+        android:orientation="horizontal">
 
-    </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Tamañobtn"
+            android:layout_marginLeft="38sp"
+            android:layout_weight="1"
+            android:background="@color/colorSuma"
+            android:onClick="sumar"
+            android:text="@string/plus"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/Tamañoletra">
 
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Tamañobtn"
+            android:layout_marginRight="38sp"
+            android:layout_weight="1"
+            android:background="@color/colorResta"
+            android:onClick="restar"
+            android:text="@string/menos"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/Tamañoletra">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Tamañobtn"
+            android:layout_marginLeft="38sp"
+            android:layout_weight="1"
+            android:background="@color/colorMulti"
+            android:onClick="multiplicar"
+            android:text="@string/Multi"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/Tamañoletra">
+
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Tamañobtn"
+            android:layout_marginRight="38sp"
+            android:layout_weight="1"
+            android:background="@color/colorDiv"
+            android:onClick="dividir"
+            android:text="@string/Division"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/Tamañoletra">
+
+        </Button>
+
+
+    </LinearLayout>
 
 </LinearLayout>

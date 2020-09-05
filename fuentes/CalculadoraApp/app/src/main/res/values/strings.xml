@@ -4,4 +4,10 @@
     <string name="Texto2">Hola Pedro</string>
     <string name="Btn_saludar">Saludar</string>
     <string name="Saludo">saludar</string>
+    <string name="n1">N1</string>
+    <string name="n2">N2</string>
+    <string name="plus">+</string>
+    <string name="menos">-</string>
+    <string name="Multi">*</string>
+    <string name="Division">/</string>
 </resources>

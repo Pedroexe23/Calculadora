@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <dimen name="marginbase2">24dp</dimen>
+    <dimen name="Tamañobtn">75dp</dimen>
+    <dimen name="marginbase">20dp</dimen>
+    <dimen name="temaniimagen">100dp</dimen>
+    <dimen name="Tamañoletra">30sp</dimen>
+</resources>
